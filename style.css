@@ -491,13 +491,15 @@ body {
   }
 
   .logo-icon {
-    width: 34px;
-    height: 42px;
-  }
+  width: 30px;
+  height: auto;
+  flex-shrink: 0;
+}
 
-  .brand-name {
-    font-size: 23px;
-  }
+.brand-name {
+  font-size: 22px;
+  line-height: 1;
+}
 
   .brand-tagline {
     display: none;
@@ -659,17 +661,18 @@ body {
   .custom-navbar .container {
     max-width: 100%;
 
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .logo-icon {
-    width: 32px;
-    height: 40px;
+    width: 28px;
+    height: auto;
   }
 
   .brand-name {
     font-size: 21px;
+    line-height: 1;
   }
 
 
@@ -1039,7 +1042,7 @@ body {
 ========================================= */
 
 .status-section {
-  width: calc(100% - 200px);
+  width: calc(100% - 150px);
   max-width: 1241px;
   min-height: 262px;
 
@@ -2811,7 +2814,7 @@ body {
   padding: 28px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 10px;
   min-height: 200px;
 
   border-radius: 16px;
@@ -3405,7 +3408,7 @@ body {
   }
 
   .audit-card {
-    min-height: 330px;
+    min-height: 430px;
     padding: 45px 48px;
   }
 
@@ -3506,6 +3509,7 @@ body {
   }
 
   .audit-card {
+    max-height: 400px;
     padding: 32px 20px;
     border-radius: 14px;
   }
@@ -3993,4 +3997,366 @@ body {
   .map-location p {
     font-size: 13px;
   }
+}
+/* =========================================================
+   FINAL RESPONSIVE ALIGNMENT OVERRIDES
+   Added without changing the existing desktop design.
+   Keep this block at the VERY END of the stylesheet.
+========================================================= */
+
+/* ---------- GLOBAL CONTAINER ALIGNMENT ---------- */
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1299.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ---------- NAV ---------- */
+
+@media (max-width: 991.98px) {
+  .custom-navbar {
+    height: 76px;
+  }
+
+  .custom-navbar .container {
+    height: 76px;
+    max-width: 720px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .custom-navbar {
+    height: 68px;
+  }
+
+  .custom-navbar .container {
+    height: 68px;
+    max-width: 540px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .custom-navbar .navbar-collapse {
+    top: 68px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .custom-navbar .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .custom-navbar {
+    height: 64px;
+  }
+
+  .custom-navbar .container {
+    height: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .custom-navbar .navbar-collapse {
+    top: 64px;
+  }
+}
+
+/* ---------- HERO ---------- */
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section .container {
+    width: 100%;
+    max-width: 720px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section .container {
+    max-width: 540px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .hero-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ---------- POSITION ---------- */
+
+@media (max-width: 991.98px) {
+  .position-section {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .position-section .container {
+    width: 100%;
+    max-width: 720px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .position-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .position-section .container {
+    max-width: 540px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .position-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .position-section .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .position-title {
+    max-width: 320px;
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .position-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ---------- STATUS ---------- */
+
+@media (max-width: 991.98px) {
+  .status-section {
+    width: calc(100% - 80px);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .status-section {
+    width: calc(100% - 40px);
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .status-section {
+    width: calc(100% - 40px);
+    max-width: none;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .status-section {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* ---------- ALL REMAINING FULL-WIDTH SECTIONS ---------- */
+
+@media (max-width: 991.98px) {
+  .what-we-cover,
+  .how-we-work,
+  .regulation,
+  .evidence,
+  .deadline,
+  .choose,
+  .faq-section,
+  .audit-section,
+  .footer-section {
+    width: 100%;
+  }
+
+  .what-we-cover,
+  .how-we-work,
+  .regulation,
+  .evidence,
+  .deadline,
+  .choose,
+  .faq-section,
+  .audit-section,
+  .footer-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .what-we-cover,
+  .how-we-work,
+  .regulation,
+  .evidence,
+  .deadline,
+  .choose,
+  .faq-section,
+  .audit-section,
+  .footer-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .what-we-cover .container,
+  .how-we-work .container,
+  .regulation .container,
+  .evidence .container,
+  .deadline .container,
+  .choose .container,
+  .faq-section .container,
+  .audit-section .container,
+  .footer-section .container {
+    width: 100%;
+    max-width: 540px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .what-we-cover .container,
+  .how-we-work .container,
+  .regulation .container,
+  .evidence .container,
+  .deadline .container,
+  .choose .container,
+  .faq-section .container,
+  .audit-section .container,
+  .footer-section .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .what-we-cover .container,
+  .how-we-work .container,
+  .regulation .container,
+  .evidence .container,
+  .deadline .container,
+  .choose .container,
+  .faq-section .container,
+  .audit-section .container,
+  .footer-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ---------- MEDIA SAFETY ---------- */
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Prevent accidental horizontal overflow from flex/grid children. */
+.row > *,
+[class*="col-"] {
+  min-width: 0;
 }
